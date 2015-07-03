@@ -1,0 +1,70 @@
+0.000 [ Info   ][Logger] No ORO_LOGLEVEL environment variable set.
+0.000 [ Info   ][Logger]  OROCOS version '2.6.0' compiled with GCC 4.6.3. Running in Xenomai.
+0.000 [ Info   ][Logger] Orocos Logging Activated at level : [ Warning] ( 4 ) 
+0.000 [ Info   ][Logger] Reference System Time is : 25119729465842 ticks ( 7404.77 seconds ).
+0.000 [ Info   ][Logger] Logging is relative to this time.
+0.000 [ Info   ][Logger] Xenomai Periodic Timer runs in preemptive 'one-shot' mode.
+0.000 [ Info   ][Logger] Installing SIGXCPU handler.
+0.000 [ Info   ][Logger] No RTT_COMPONENT_PATH set. Using default: /home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos
+0.000 [ Info   ][Logger] plugin 'rtt' not loaded before.
+0.000 [ Info   ][Logger] Loading plugin libraries from directory /home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos/xenomai/./plugins ...
+0.000 [ Info   ][Logger] Loaded RTT Service 'scripting' from 'rtt-scripting'
+0.001 [ Info   ][Logger] Loaded RTT Service 'marshalling' from 'rtt-marshalling'
+0.001 [ Info   ][Logger] typekit 'rtt' not loaded before.
+0.001 [ Info   ][Logger] Loading typekit libraries from directory /home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos/xenomai/./types ...
+0.028 [ Info   ][TypekitRepository::Import] Loading Transport mqueue://rtt-types.
+0.028 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-mqueue-transport' from 'rtt-transport-mqueue'
+0.115 [ Info   ][TypekitRepository::Import] Loading Transport CORBA://rtt-types.
+0.115 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-corba-types' from 'rtt-transport-corba'
+0.179 [ Info   ][TypekitRepository::Import] Loading Typekit rtt-types.
+0.179 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for int
+0.179 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for int
+0.179 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for uint
+0.179 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for uint
+0.179 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for double
+0.179 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for double
+0.179 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for float
+0.179 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for float
+0.179 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for char
+0.179 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for char
+0.180 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for bool
+0.180 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for bool
+0.180 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for void
+0.180 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for ConnPolicy
+0.180 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for TaskContext
+0.180 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for string
+0.180 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for array
+0.180 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for array
+0.180 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-types' from 'rtt-typekit'
+0.180 [ Info   ][Logger] No RTT_COMPONENT_PATH set. Using default: /home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos
+0.180 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='lua'
+0.180 [ Info   ][lua] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 1, cpu affinity 0 and period 0 (PID= 0 ).
+0.180 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='GlobalEngine'
+0.181 [ Info   ][GlobalEngine] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 1, cpu affinity 0 and period 0 (PID= 0 ).
+0.181 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='Deployer'
+0.181 [ Info   ][Deployer] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 1, cpu affinity 0 and period 0 (PID= 0 ).
+0.182 [ Info   ][rttlua-xenomai::main()] No site file was found. Importing 'ocl' by default.
+0.183 [ Info   ][DeploymentComponent::import] Importing directory /home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos/xenomai/ocl ...
+0.200 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::LuaComponent'
+0.219 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos/xenomai/ocl/liborocos-ocl-timer-xenomai.so'
+0.278 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::logging::Log4cxxAppender'
+0.300 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::LuaTLSFComponent'
+0.321 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::HelloWorld'
+0.339 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos/xenomai/ocl/liborocos-ocl-reporting-xenomai.so'
+0.361 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos/xenomai/ocl/liborocos-ocl-common-xenomai.so'
+0.469 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos/xenomai/ocl/liborocos-ocl-reporting-netcdf-xenomai.so'
+0.469 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::NetcdfReporting'
+0.492 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos/xenomai/ocl/liborocos-ocl-logging-xenomai.so'
+0.492 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos/xenomai/ocl/types ...
+0.527 [ Info   ][TypekitRepository::Import] Loading Typekit OCLTypekit.
+0.527 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'OCLTypekit' from 'ocl'
+0.527 [ Info   ][DeploymentComponent::import] Loading plugin libraries from directory /home/arscontrol/fuerte_workspace/rosstacks/orocos_toolchain/install/lib/orocos/xenomai/ocl/plugins ...
+0.544 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'Lua' from 'rttlua-plugin'
+0.564 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'os' from 'os'
+0.582 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'print' from 'print'
+0.598 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'LuaTLSF' from 'rttlua-tlsf-plugin'
+0.598 [ Info   ][DeploymentComponent::stopComponentsGroup] Stopping group 0
+0.598 [ Info   ][DeploymentComponent::cleanupComponentsGroup] Cleaning up group 0
+0.598 [ Info   ][rttlua-xenomai::main()] Unloading group 0
+0.598 [ Info   ][rttlua-xenomai::main()] Kick-out of group 0 successful.
+0.599 [ Info   ][Logger] Orocos Logging Deactivated.
