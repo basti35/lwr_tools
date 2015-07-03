@@ -22,6 +22,20 @@ include( ${OROCOS-RTT_USE_FILE_PATH}/UseOROCOS-RTT.cmake )
 
 # Rest of the configuration is in src/
 add_subdirectory( src )
+#
+# Building a typekit using typegen (recommended):
+#
+# Creates a typekit library liblwer-types-<target>.so
+# and installs in the directory lib/orocos/@target@/lwer/types/
+#
+# The header will go in include/orocos/lwer/types/lwer/lwer-types.hpp
+# So you can #include <lwer/lwer-types.hpp>
+#
+orocos_typegen_headers(include/lwer/lwer-types.hpp) # ...you may add multiple header files
+#
+# You may only have *ONE* orocos_typegen_headers statement in your toplevel CMakeFile.txt !
+
+
 
 #
 # Generates and installs our package. Must be the last statement such

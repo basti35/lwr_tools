@@ -1,0 +1,23 @@
+<package>
+  <name>lwr_oro_bridge</name>
+  <version>1.0.0</version>
+  <description>This package contains the components of the lwr_oro_bridge package.</description>
+  <maintainer email="nicola.battilani@unimore.it">Nicola Battilani</maintainer>
+
+  <license>Unknown</license>
+
+  <url type="website"></url>
+  <!-- <url type="bugtracker"></url> -->
+  
+  <author>Nicola Battilani, Federica Ferraguti</author>
+
+  <build_depend>rtt</build_depend>
+  <build_depend>kdl</build_depend>
+  <build_depend>orogen</build_depend>
+  <run_depend>rtt</run_depend>
+  <run_depend>kdl</run_depend>
+  
+  <export>
+  
+  </export>
+</package>

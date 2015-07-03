@@ -49,26 +49,12 @@ orocos_service(lwr_interface-service lwr_interface-service.cpp) # ...only one se
 
 
 #
-# Building a typekit using typegen (recommended):
-#
-# Creates a typekit library liblwr_interface-types-<target>.so
-# and installs in the directory lib/orocos/@target@/lwr_interface/types/
-#
-# The header will go in include/orocos/lwr_interface/types/lwr_interface/lwr_interface-types.hpp
-# So you can #include <lwr_interface/lwr_interface-types.hpp>
-#
-orocos_typegen_headers(include/lwr_interface/lwr_interface-types.hpp) # ...you may add multiple header files
-#
-# You may only have *ONE* orocos_typegen_headers statement in your toplevel CMakeFile.txt !
-
-
-#
 # Building a normal library (optional):
 #
 # Creates a library libsupport-<target>.so and installs it in
 # lib/
 #
-orocos_library(support support.cpp) # ...you may add multiple source files
+orocos_library(lwr_interface-support support.cpp) # ...you may add multiple source files
 #
 # You may add multiple orocos_library statements.
 

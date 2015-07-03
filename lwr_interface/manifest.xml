@@ -1,9 +1,0 @@
-<package>
-    <description brief="Orocos lwr_interface Component package">
-        This package contains the components of the lwr_interface package.
-    </description>
-    <!--NOTE: set the license and author before you publish this code-->
-    <license></license>
-    <author>Mantained by Nicola Battilani, Federica Ferraguti</author>
-    <depend package="rtt" />
-</package>

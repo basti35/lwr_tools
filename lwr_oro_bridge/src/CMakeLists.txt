@@ -52,26 +52,12 @@ orocos_service(lwr_oro_bridge-service lwr_oro_bridge-service.cpp) # ...only one 
 
 
 #
-# Building a typekit using typegen (recommended):
-#
-# Creates a typekit library liblwr_oro_bridge-types-<target>.so
-# and installs in the directory lib/orocos/@target@/lwr_oro_bridge/types/
-#
-# The header will go in include/orocos/lwr_oro_bridge/types/lwr_oro_bridge/lwr_oro_bridge-types.hpp
-# So you can #include <lwr_oro_bridge/lwr_oro_bridge-types.hpp>
-#
-orocos_typegen_headers(include/lwr_oro_bridge/lwr_oro_bridge-types.hpp) # ...you may add multiple header files
-#
-# You may only have *ONE* orocos_typegen_headers statement in your toplevel CMakeFile.txt !
-
-
-#
 # Building a normal library (optional):
 #
 # Creates a library libsupport-<target>.so and installs it in
 # lib/
 #
-orocos_library(support support.cpp) # ...you may add multiple source files
+orocos_library(lwr_oro_bridge-support support.cpp) # ...you may add multiple source files
 #
 # You may add multiple orocos_library statements.
 

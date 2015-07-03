@@ -25,7 +25,7 @@ if (NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/include/lwr_oro_bridge/friComm.h)
    ")
 endif()
 
-link_directories(/home/arscontrol/fuerte_workspace/KUKA/FRILibrary/Linux/x64/release/lib)
+link_directories(/home/$USER/KUKA/FRILibrary/Linux/x64/release/lib)
 
 # Defines the orocos_* cmake macros. See that file for additional
 # documentation.
@@ -33,6 +33,20 @@ include( ${OROCOS-RTT_USE_FILE_PATH}/UseOROCOS-RTT.cmake )
 
 # Rest of the configuration is in src/
 add_subdirectory( src )
+#
+# Building a typekit using typegen (recommended):
+#
+# Creates a typekit library liblwer-types-<target>.so
+# and installs in the directory lib/orocos/@target@/lwer/types/
+#
+# The header will go in include/orocos/lwer/types/lwer/lwer-types.hpp
+# So you can #include <lwer/lwer-types.hpp>
+#
+orocos_typegen_headers(include/lwer/lwer-types.hpp) # ...you may add multiple header files
+#
+# You may only have *ONE* orocos_typegen_headers statement in your toplevel CMakeFile.txt !
+
+
 
 #
 # Generates and installs our package. Must be the last statement such
