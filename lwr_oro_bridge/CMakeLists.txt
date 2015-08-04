@@ -25,7 +25,15 @@ if (NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/include/lwr_oro_bridge/friComm.h)
    ")
 endif()
 
-link_directories(/home/$USER/KUKA/FRILibrary/Linux/x64/release/lib)
+find_package(Eigen3 REQUIRED)
+include_directories(${EIGEN3_INCLUDE_DIR})
+
+find_package(orocos_kdl)
+include_directories(${KDL_INCLUDE_DIRS})
+link_directories(${orocos_kdl_LIBRARY_DIRS})
+
+include_directories(/home/kuka/KUKA/FRILibrary/include/)
+link_directories(/home/kuka/KUKA/FRILibrary/Linux/x64/release/lib)
 
 # Defines the orocos_* cmake macros. See that file for additional
 # documentation.
@@ -42,7 +50,7 @@ add_subdirectory( src )
 # The header will go in include/orocos/lwer/types/lwer/lwer-types.hpp
 # So you can #include <lwer/lwer-types.hpp>
 #
-orocos_typegen_headers(include/lwer/lwer-types.hpp) # ...you may add multiple header files
+#orocos_typegen_headers(include/lwr_oro_bridge/lwr_oro_bridge-types.hpp) # ...you may add multiple header files
 #
 # You may only have *ONE* orocos_typegen_headers statement in your toplevel CMakeFile.txt !
 

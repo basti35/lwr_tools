@@ -48,7 +48,7 @@ std::cout << "Lwr_oro_bridge constructed !" <<std::endl;
 
 bool Lwr_oro_bridge::configureHook(){
 
-	FRI = new FastResearchInterface("/home/arscontrol/fuerte_workspace/KUKA/FRILibrary/etc/980039-FRI-Driver.init");
+	FRI = new FastResearchInterface("/home/kuka/KUKA/FRILibrary/etc/980039-FRI-Driver.init");
 
 
 	measJointPos.resize(LBR_MNJ);

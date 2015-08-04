@@ -62,3 +62,6 @@ orocos_library(lwr_oro_bridge-support support.cpp) # ...you may add multiple sou
 # You may add multiple orocos_library statements.
 
 
+target_link_libraries(lwr_oro_bridge
+    ${orocos_kdl_LIBRARIES}
+    )

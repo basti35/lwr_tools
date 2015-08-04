@@ -31,7 +31,7 @@ add_subdirectory( src )
 # The header will go in include/orocos/lwer/types/lwer/lwer-types.hpp
 # So you can #include <lwer/lwer-types.hpp>
 #
-orocos_typegen_headers(include/lwer/lwer-types.hpp) # ...you may add multiple header files
+#orocos_typegen_headers(include/lwr_interface/lwr_interface-types.hpp) # ...you may add multiple header files
 #
 # You may only have *ONE* orocos_typegen_headers statement in your toplevel CMakeFile.txt !
 

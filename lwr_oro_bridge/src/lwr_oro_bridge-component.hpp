@@ -11,9 +11,9 @@
 
 
 
-#include <lwr_oro_bridge/friComm.h>
-#include <FRILibrary/FastResearchInterface.h>
-#include <FRILibrary/LinuxAbstraction.h>
+#include <friComm.h>
+#include <FastResearchInterface.h>
+#include <LinuxAbstraction.h>
 
 #define PI	3.1415926535897932384626433832795
 #define NUMBER_OF_JOINTS 7
